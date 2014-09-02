@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
-AUTHOR = u'Vineet Naik'
-SITENAME = u'/home/vineet'
-SITETITLE = u'Vineet\'s mind space on the internet'
+AUTHOR = u'Unni'
+SITENAME = u'Mutexes Blog'
+SITETITLE = u'Notes of a sys admin'
 SITEURL = ''
 
 TIMEZONE = 'Asia/Kolkata'
@@ -25,8 +25,6 @@ DEFAULT_PAGINATION = False
 THEME = 'naiq'
 
 MENUITEMS = (('feed', '/feeds/all.atom.xml'),
-             ('music', '/pages/music.html'),
-             ('talks', '/pages/talks.html'),
              ('code', '/pages/code.html'),
              ('about', '/pages/about-me.html'),)
 

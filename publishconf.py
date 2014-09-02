@@ -5,9 +5,9 @@ import sys
 sys.path.append('.')
 from pelicanconf import *
 
-SITEURL = 'http://naiquevin.github.io'
+SITEURL = 'http://www.mutexes.org/blog'
 
-OUTPUT_PATH = '../naiquevin.github.com/'
+OUTPUT_PATH = '../mutexesblog/'
 
 DELETE_OUTPUT_DIRECTORY = True
 
@@ -16,8 +16,8 @@ DELETE_OUTPUT_DIRECTORY = True
 # Uncomment following line for absolute URLs in production:
 #RELATIVE_URLS = False
 
-DISQUS_SITENAME = "naiquevinsblog"
-GOOGLE_ANALYTICS = "UA-38557598-1"
+DISQUS_SITENAME = ""
+GOOGLE_ANALYTICS = ""
 
 DEBUG = False
 

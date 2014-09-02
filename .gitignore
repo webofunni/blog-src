@@ -7,3 +7,4 @@ pelican.pid
 srv.pid
 
 env/
+cache/
