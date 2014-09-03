@@ -24,9 +24,9 @@ DEFAULT_PAGINATION = False
 
 THEME = 'naiq'
 
-MENUITEMS = (('feed', '/feeds/all.atom.xml'),
-             ('code', '/pages/code.html'),
-             ('about', '/pages/about-me.html'),)
+MENUITEMS = (('feed', '/blog/feeds/all.atom.xml'),
+             ('code', '/blog/pages/code.html'),
+             ('about', '/blog/pages/about-me.html'),)
 
 
 DEBUG = True
