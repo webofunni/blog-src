@@ -6,7 +6,7 @@ Category: tmux
 Status: draft
 Summary: Tmux settings making my tmux aowesome
 
-I am using tmux for almost 2 years now. I was using and a big fan of screen before that. But screen was replaced by tmux from the moment one of my colleages introduced me to a more actively deleoped tmux.
+I am using tmux for almost 2 years now. I was using and was a big fan of screen before that. But screen was replaced by tmux from the moment one of my colleague introduced me to a more actively developed tmux.
 
 Here I am documenting my Tmux configuration. Full configuration file is stored at [Github](https://github.com/webofunni/dotfiles/blob/master/tmux/tmux.conf)
 
@@ -16,20 +16,20 @@ Here I am documenting my Tmux configuration. Full configuration file is stored a
 	set -g prefix C-a
 	bind C-a send-prefix
 
-Above settings will replace defualt prefix for tmux from Ctrl+b or CMD+b to Ctrl+a or CMD+a. It also binds Ctrl+a+Ctrl+a or CMD+a+CMD+a to send prefix to multiplexer running under tmux such as screen.
+Above settings will replace default prefix for tmux from Ctrl+b or CMD+b to Ctrl+a or CMD+a. It also binds Ctrl+a+Ctrl+a or CMD+a+CMD+a to send prefix to multiplexer running under tmux such as screen.
 
 	::text
 	#Some easy key combination to Split window
 	bind | split-window -h
 	bind - split-window -v
 
-Now its time to change the keyboard short cut to Prefix + | for vertical split and Prefix + - for horizondal split.
+Now its time to change the keyboard short cut to Prefix + | for vertical split and Prefix + - for horizontal split.
 
 	::text
 	#Easily reload configuration
 	bind r source-file ~/.tmux.conf \; display "Reloaded!!!"
 
-Easily relead the configuration file using Prefix+r
+Easily reload the configuration file using Prefix+r
 
 	::text
 	#Change starting window index to 1 from 0
@@ -40,8 +40,6 @@ Easily relead the configuration file using Prefix+r
 	set -g visual-activity on
 
 Change the window index from 0 to 1 and keep monitor activity on each window.
-
-![Alt text](/theme/images/tmux-left.png)
 
 	::text
 	# status bar colors
@@ -64,3 +62,22 @@ Change the window index from 0 to 1 and keep monitor activity on each window.
 	set-window-option -g window-status-format '#[fg=green][#[fg=cyan,dim]#I#[fg=blue]:#[default]#W#[fg=grey,dim]#F#[fg=green]]'
 	set-window-option -g window-status-current-format '#[bg=red,fg=cyan,bold][#I#[bg=red,fg=cyan]:#[fg=colour230]#W#[fg=dim]#F#[bg=red,fg=cyan]]'
 
+Above settings will format the status bar at bottom. Below screenshot shows the left side of statusbar.
+
+![Alt text](/theme/images/tmux-left.png)
+
+Above status bar is from a tmux session with name dev. 
+
+	::bash
+	tmux new -s dev
+
+As you can see left side of status bar shows tmux session name, number of windows, number of panes and window list. You can see that window index start from 1 instead of default zero and active window background is red.
+
+Right side of the statusbar is set to show the the date. 
+
+	::text
+	set -g status-right "#[fg=green][#[fg=cyan]%d %b %R#[fg=green]]"
+
+Resulted status bar is shown below : 
+
+![Alt status bar right](/theme/images/tmux-right.png)
