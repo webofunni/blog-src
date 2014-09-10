@@ -78,6 +78,8 @@ Right side of the statusbar is set to show the the date.
 	::text
 	set -g status-right "#[fg=green][#[fg=cyan]%d %b %R#[fg=green]]"
 
-Resulted status bar is shown below : 
+Result will look like : 
 
 ![Alt status bar right](/theme/images/tmux-right.png)
+
+Thats all about my Tmux settings :)
