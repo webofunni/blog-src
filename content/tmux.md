@@ -3,7 +3,6 @@ Author: Unni
 Date: 2014-09-03
 Tags: tmux, dotfiles
 Category: tmux
-Status: draft
 Summary: Tmux settings making my tmux aowesome
 
 I am using tmux for almost 2 years now. I was using and was a big fan of screen before that. But screen was replaced by tmux from the moment one of my colleague introduced me to a more actively developed tmux.
