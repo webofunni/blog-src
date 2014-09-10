@@ -15,20 +15,20 @@ Here I am documenting my Tmux configuration. Full configuration file is stored a
 	set -g prefix C-a
 	bind C-a send-prefix
 
-Above settings will replace default prefix for tmux from Ctrl+b or CMD+b to Ctrl+a or CMD+a. It also binds Ctrl+a+Ctrl+a or CMD+a+CMD+a to send prefix to multiplexer running under tmux such as screen.
+Above settings will replace default prefix for tmux from `Ctrl+b` or `CMD+b` to `Ctrl+a` or `CMD+a`. It also binds `Ctrl+a+Ctrl+a` or `CMD+a+CMD+a` to send prefix to multiplexer running under tmux such as screen.
 
 	::text
 	#Some easy key combination to Split window
 	bind | split-window -h
 	bind - split-window -v
 
-Now its time to change the keyboard short cut to Prefix + | for vertical split and Prefix + - for horizontal split.
+Now its time to change the keyboard short cut to `Prefix + |` for vertical split and `Prefix + -` for horizontal split.
 
 	::text
 	#Easily reload configuration
 	bind r source-file ~/.tmux.conf \; display "Reloaded!!!"
 
-Easily reload the configuration file using Prefix+r
+Easily reload the configuration file using `Prefix+r`
 
 	::text
 	#Change starting window index to 1 from 0
