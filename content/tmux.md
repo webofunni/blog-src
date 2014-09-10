@@ -63,7 +63,7 @@ Change the window index from 0 to 1 and keep monitor activity on each window.
 
 Above settings will format the status bar at bottom. Below screenshot shows the left side of statusbar.
 
-![Alt text](/theme/images/tmux-left.png)
+![Alt text](/blog/theme/images/tmux-left.png)
 
 Above status bar is from a tmux session with name dev. 
 
@@ -79,6 +79,6 @@ Right side of the statusbar is set to show the the date.
 
 Result will look like : 
 
-![Alt status bar right](/theme/images/tmux-right.png)
+![Alt status bar right](/blog/theme/images/tmux-right.png)
 
 Thats all about my Tmux settings :)
