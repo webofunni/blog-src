@@ -1,3 +1,5 @@
+title:News letter
+
 #September 2014 Mutexes News Letter
 
 This is the first release of Mutexes News Letter. News about Linux, BSD, Security, Programming and Gadgets.
